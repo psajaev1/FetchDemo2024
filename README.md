@@ -49,7 +49,7 @@ POST endpoint
 '   
 
 GET endpoint   
-`curl --location 'http://localhost:8080/receipts/f3d78f16-2247-486f-a07d-0606aa117367/points'`
+`curl --location 'http://localhost:8080/receipts/e546cef4539ba8b171927c001b00399086c1c6b9d8583bbf4a226297e3dc742e/points'`
 
 # Error Handling  
 
