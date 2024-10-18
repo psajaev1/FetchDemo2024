@@ -1,24 +1,13 @@
 package com.example.FetchDemo2024.service;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeParseException;
 import java.util.Map;
-import java.util.Objects;
-import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import com.example.FetchDemo2024.model.BadReceiptException;
-import com.example.FetchDemo2024.model.BadTimeException;
 import com.example.FetchDemo2024.model.DuplicateReceiptException;
 import com.example.FetchDemo2024.model.IdResponse;
-import com.example.FetchDemo2024.model.Item;
 import com.example.FetchDemo2024.model.PointsResponse;
 import com.example.FetchDemo2024.model.Receipt;
 import com.example.FetchDemo2024.model.ReceiptNotFoundException;
-import com.example.FetchDemo2024.util.DateTimeHelper;
 import com.example.FetchDemo2024.util.KeyGenerator;
 import com.example.FetchDemo2024.util.PointsCalculator;
 
@@ -55,6 +44,7 @@ public class FetchService {
 
     /*
      * Get points of corresponding reciept ID
+     * @Returns PointsResponse Object
      */
     public PointsResponse getReceiptPoints(String id) {
         if (pointsMap.get(id) == null) {
