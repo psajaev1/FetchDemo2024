@@ -8,7 +8,7 @@ This API has two endpoints
 # Running the application 
 Clone the directory and enter the root level 
 1. `docker image build -t fetch-demo .` -- creates a docker image called fetch-demo using the JAR in the build file
-2. `docker container run --name fetch-demo -p 8083:8083 -d fetch-demo` -- starts a container on port 8083
+2. `docker container run --name fetch-demo -p 8080:8080 -d fetch-demo` -- starts a container on port 8080
 
 After running these commands, the server will be available at localhost:8083
 
